@@ -11,6 +11,7 @@ namespace AutomationSeleniumTesting
         //IWebDriver driver = new ChromeDriver();
 
         LoginPage loginPage = new LoginPage();
+        SearchPage searchPage = new SearchPage();
 
         [TestMethod]
         public void LoginWithValidCredentials_TC001()
@@ -34,6 +35,15 @@ namespace AutomationSeleniumTesting
             CorePage.driver.Close();
         }
 
+        [TestMethod]
+
+        public void SearchHotel_TC003()
+        {
+            CorePage.SeleniumInit();
+            loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
+            searchPage.SearchHotel();
+            CorePage.driver.Close();
+        }
 
     }
 }

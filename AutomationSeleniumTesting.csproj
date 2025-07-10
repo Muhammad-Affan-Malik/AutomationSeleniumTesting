@@ -85,13 +85,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CorePage.cs" />
-    <Compile Include="LoginPage.cs" />
+    <Compile Include="WebApp\Login\LoginPage.cs" />
     <Compile Include="TestExecution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebApp\SearchHotelPage\SearchPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebApp\BookingHotelPage\" />
+    <Folder Include="WebApp\SelectHotelPage\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
