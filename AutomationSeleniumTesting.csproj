@@ -84,6 +84,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CorePage.cs" />
+    <Compile Include="LoginPage.cs" />
     <Compile Include="TestExecution.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
