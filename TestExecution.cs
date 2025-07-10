@@ -65,43 +65,37 @@ namespace AutomationSeleniumTesting
         [TestMethod]
         public void LoginWithValidCredentials_TC001()
         {
-            CorePage.SeleniumInit("MicrosoftEdge");
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             string actualText = CorePage.driver.FindElement(By.ClassName("welcome_menu")).Text;
             string expectedText = "Welcome to Adactin Group of Hotels";
             Assert.AreEqual(expectedText, actualText);
-            CorePage.driver.Close();
         }
 
         [TestMethod]
         public void LoginWithInvalidCredentials_TC002()
-        {
-            CorePage.SeleniumInit("Chrome"); 
+        { 
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester123");
             string actualText = CorePage.driver.FindElement(By.ClassName("auth_error")).Text;
             string expectedText = "Invalid Login details or Your Password might have expired. Click here to reset your password";
             Assert.AreEqual(expectedText, actualText);
-            CorePage.driver.Close();
         }
 
         [TestMethod]
 
         public void SearchHotel_TC003()
         {
-            CorePage.SeleniumInit("Chrome");
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             searchPage.SearchHotel();
-            CorePage.driver.Close();
         }
 
         [TestMethod]
         public void SelectHotel_TC004()
         {
-            CorePage.SeleniumInit("Chrome");
+
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             searchPage.SearchHotel();
             selectPage.SelectHotel();
-            CorePage.driver.Close();
+
         }
 
         [TestMethod]
