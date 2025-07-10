@@ -1,4 +1,5 @@
 ﻿using System;
+using AutomationSeleniumTesting.WebApp.BookingHotelPage;
 using AutomationSeleniumTesting.WebApp.SelectHotelPage;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
@@ -14,6 +15,7 @@ namespace AutomationSeleniumTesting
         LoginPage loginPage = new LoginPage();
         SearchPage searchPage = new SearchPage();
         SelectPage selectPage = new SelectPage();
+        BookingPage bookingPage = new BookingPage();
 
         [TestMethod]
         public void LoginWithValidCredentials_TC001()
@@ -54,6 +56,18 @@ namespace AutomationSeleniumTesting
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             searchPage.SearchHotel();
             selectPage.SelectHotel();
+            CorePage.driver.Close();
+        }
+
+        [TestMethod]
+
+        public void BookHotel_TC005()
+        {
+            CorePage.SeleniumInit();
+            loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
+            searchPage.SearchHotel();
+            selectPage.SelectHotel();
+            bookingPage.BookHotel();
             CorePage.driver.Close();
         }
     }
