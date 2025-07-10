@@ -11,6 +11,49 @@ namespace AutomationSeleniumTesting
     public class TestExecution
     {
 
+        #region Setups and Cleanups
+
+        public TestContext instance;
+
+        public TestContext TestContext
+        {
+            set { instance = value; }
+            get { return instance; }
+        }
+
+        [ClassInitialize()]
+        public static void ClassInit(TestContext context)
+        {
+
+        }
+
+        [ClassCleanup()]
+        public static void ClassCleanup()
+        {
+           /* if (CorePage.driver != null)
+            {
+                CorePage.driver.Quit();
+            }*/
+        }
+
+        [TestInitialize()]
+        public void TestInit()
+        {
+            CorePage.SeleniumInit("Chrome");
+        }
+
+
+        [TestCleanup()]
+        public void TestCleanup()
+        {
+            /*if (CorePage.driver != null)
+            {
+                CorePage.driver.Quit();
+            }*/
+            CorePage.driver.Close();
+        }
+
+        #endregion
 
         //IWebDriver driver = new ChromeDriver();
 
@@ -66,12 +109,11 @@ namespace AutomationSeleniumTesting
  
         public void BookHotel_TC005()
         {
-            CorePage.SeleniumInit("Chrome");
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             searchPage.SearchHotel();
             selectPage.SelectHotel();
             bookingPage.BookHotel();
-            CorePage.driver.Close();
+
         }
     }
 }
