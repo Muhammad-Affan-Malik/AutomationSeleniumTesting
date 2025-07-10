@@ -61,6 +61,7 @@ namespace AutomationSeleniumTesting
 
         [TestMethod]
 
+        // FIXING ERROR : The method or operation is not implemented. its causing error 
         public void BookHotel_TC005()
         {
             CorePage.SeleniumInit();
