@@ -20,7 +20,7 @@ namespace AutomationSeleniumTesting
         [TestMethod]
         public void LoginWithValidCredentials_TC001()
         {
-            CorePage.SeleniumInit("Chrome");
+            CorePage.SeleniumInit("MicrosoftEdge");
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             string actualText = CorePage.driver.FindElement(By.ClassName("welcome_menu")).Text;
             string expectedText = "Welcome to Adactin Group of Hotels";
