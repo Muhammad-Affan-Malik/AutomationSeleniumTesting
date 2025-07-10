@@ -20,7 +20,7 @@ namespace AutomationSeleniumTesting
         [TestMethod]
         public void LoginWithValidCredentials_TC001()
         {
-            CorePage.SeleniumInit();
+            CorePage.SeleniumInit("Chrome");
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             string actualText = CorePage.driver.FindElement(By.ClassName("welcome_menu")).Text;
             string expectedText = "Welcome to Adactin Group of Hotels";
@@ -31,7 +31,7 @@ namespace AutomationSeleniumTesting
         [TestMethod]
         public void LoginWithInvalidCredentials_TC002()
         {
-            CorePage.SeleniumInit(); 
+            CorePage.SeleniumInit("Chrome"); 
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester123");
             string actualText = CorePage.driver.FindElement(By.ClassName("auth_error")).Text;
             string expectedText = "Invalid Login details or Your Password might have expired. Click here to reset your password";
@@ -43,7 +43,7 @@ namespace AutomationSeleniumTesting
 
         public void SearchHotel_TC003()
         {
-            CorePage.SeleniumInit();
+            CorePage.SeleniumInit("Chrome");
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             searchPage.SearchHotel();
             CorePage.driver.Close();
@@ -52,7 +52,7 @@ namespace AutomationSeleniumTesting
         [TestMethod]
         public void SelectHotel_TC004()
         {
-            CorePage.SeleniumInit();
+            CorePage.SeleniumInit("Chrome");
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             searchPage.SearchHotel();
             selectPage.SelectHotel();
@@ -64,7 +64,7 @@ namespace AutomationSeleniumTesting
         // FIXING ERROR : The method or operation is not implemented. its causing error 
         public void BookHotel_TC005()
         {
-            CorePage.SeleniumInit();
+            CorePage.SeleniumInit("Chrome");
             loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
             searchPage.SearchHotel();
             selectPage.SelectHotel();

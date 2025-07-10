@@ -12,12 +12,17 @@ namespace AutomationSeleniumTesting
     {
         public static IWebDriver driver;
 
-        public static IWebDriver SeleniumInit()
-
+        public static void SeleniumInit(string browser)
         {
-            IWebDriver chromeDriver = new ChromeDriver();
-            driver = chromeDriver;
-            return driver;
+            if (browser == "Chrome")
+            {
+                var chromeOptions = new ChromeOptions();
+                chromeOptions.AddArguments("--start-maximized");
+                chromeOptions.AddArguments("--incognito");
+                IWebDriver chromeDriver = new ChromeDriver(chromeOptions);
+                driver = chromeDriver;
+
+            }
         }
     }
 }
