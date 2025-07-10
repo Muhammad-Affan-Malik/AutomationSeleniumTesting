@@ -14,14 +14,10 @@ namespace AutomationSeleniumTesting
         By loginBtn = By.Id("login");
         public void Login(string url, string username, string password)
         {
-
-
             driver.Url = url;
             driver.FindElement(usernameTxt).SendKeys(username);
             driver.FindElement(passwordTxt).SendKeys(password);
             driver.FindElement(loginBtn).Click();
-
-
         }
     }
 }
