@@ -100,11 +100,14 @@ namespace AutomationSeleniumTesting
         }
 
         [TestMethod]
-
- 
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "BookHotel_TC005", DataAccessMethod.Sequential)]
         public void BookHotel_TC005()
         {
-            loginPage.Login("https://adactinhotelapp.com/", "AmirTester", "AmirTester");
+            string url = TestContext.DataRow["url"].ToString();
+            string user = TestContext.DataRow["username"].ToString();
+            string pass = TestContext.DataRow["password"].ToString();
+
+            loginPage.Login(url, user, pass);
             searchPage.SearchHotel();
             selectPage.SelectHotel();
             bookingPage.BookHotel();
