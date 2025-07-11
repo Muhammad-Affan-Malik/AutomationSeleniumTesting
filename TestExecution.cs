@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using AutomationSeleniumTesting.WebApp.BookingHotelPage;
 using AutomationSeleniumTesting.WebApp.SelectHotelPage;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -39,7 +40,7 @@ namespace AutomationSeleniumTesting
         [TestInitialize()]
         public void TestInit()
         {
-            CorePage.SeleniumInit("Chrome");
+            CorePage.SeleniumInit(ConfigurationManager.AppSettings["Browser"].ToString());
         }
 
 
