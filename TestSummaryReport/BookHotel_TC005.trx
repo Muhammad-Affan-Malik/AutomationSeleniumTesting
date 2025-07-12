@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="d798f516-19c9-4483-8cd1-3412590d8b7d" name="Uchiha Itachi@LENOVO0962 2025-07-12 06:47:17" runUser="LENOVO0962\Uchiha Itachi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-07-12T06:47:17.1780896+05:00" queuing="2025-07-12T06:47:17.1780896+05:00" start="2025-07-12T06:47:07.6200593+05:00" finish="2025-07-12T06:47:45.3354610+05:00" />
+  <TestSettings name="default" id="f8292484-b718-451e-a5c5-0abc0d7aa53e">
+    <Deployment runDeploymentRoot="Uchiha_Itachi_LENOVO0962_2025-07-12_06_47_17" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="23153eb3-f1b9-4b1c-8524-2b1de8c011e5" testId="ec47e835-f858-f022-9a13-52d7b1898641" testName="LoginWithValidCredentials_TC001" computerName="LENOVO0962" duration="00:00:09.0757903" startTime="2025-07-12T06:47:08.0262974+05:00" endTime="2025-07-12T06:47:17.1465072+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="23153eb3-f1b9-4b1c-8524-2b1de8c011e5" />
+    <UnitTestResult executionId="7d61f6da-ac78-4498-9dcc-6d6615897e74" testId="cdda12e7-9750-7e45-ea35-af4b79199be1" testName="SearchHotel_TC003" computerName="LENOVO0962" duration="00:00:06.5167359" startTime="2025-07-12T06:47:22.5820044+05:00" endTime="2025-07-12T06:47:29.1089670+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d61f6da-ac78-4498-9dcc-6d6615897e74" />
+    <UnitTestResult executionId="f82b3a11-0216-4896-b6d0-24f1eb0e292b" testId="f33473f2-e678-1063-be6e-6387112c1f53" testName="BookHotel_TC005 (Data Row 0)" computerName="LENOVO0962" duration="00:00:08.4555817" startTime="2025-07-12T06:47:36.1719322+05:00" endTime="2025-07-12T06:47:44.9699641+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f82b3a11-0216-4896-b6d0-24f1eb0e292b" />
+    <UnitTestResult executionId="6309cb7a-3541-4813-8254-3c650685dfaa" testId="e92c2124-7c7a-8df7-4f9a-7932fd5139b2" testName="LoginWithInvalidCredentials_TC002" computerName="LENOVO0962" duration="00:00:05.4067745" startTime="2025-07-12T06:47:17.1780896+05:00" endTime="2025-07-12T06:47:22.5820044+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6309cb7a-3541-4813-8254-3c650685dfaa" />
+    <UnitTestResult executionId="d7b661c5-3cc4-46b6-b5a9-d7cbb329c48f" testId="8f659f83-ac67-2583-5be6-133812a1ebbf" testName="SelectHotel_TC004" computerName="LENOVO0962" duration="00:00:07.0666902" startTime="2025-07-12T06:47:29.1089670+05:00" endTime="2025-07-12T06:47:36.1719322+05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d7b661c5-3cc4-46b6-b5a9-d7cbb329c48f" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="SelectHotel_TC004" storage="c:\users\muham\source\repos\automationseleniumtesting\bin\debug\automationseleniumtesting.dll" id="8f659f83-ac67-2583-5be6-133812a1ebbf">
+      <Execution id="d7b661c5-3cc4-46b6-b5a9-d7cbb329c48f" />
+      <TestMethod codeBase="C:\Users\muham\source\repos\AutomationSeleniumTesting\bin\Debug\AutomationSeleniumTesting.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationSeleniumTesting.TestExecution" name="SelectHotel_TC004" />
+    </UnitTest>
+    <UnitTest name="LoginWithValidCredentials_TC001" storage="c:\users\muham\source\repos\automationseleniumtesting\bin\debug\automationseleniumtesting.dll" id="ec47e835-f858-f022-9a13-52d7b1898641">
+      <Execution id="23153eb3-f1b9-4b1c-8524-2b1de8c011e5" />
+      <TestMethod codeBase="C:\Users\muham\source\repos\AutomationSeleniumTesting\bin\Debug\AutomationSeleniumTesting.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationSeleniumTesting.TestExecution" name="LoginWithValidCredentials_TC001" />
+    </UnitTest>
+    <UnitTest name="SearchHotel_TC003" storage="c:\users\muham\source\repos\automationseleniumtesting\bin\debug\automationseleniumtesting.dll" id="cdda12e7-9750-7e45-ea35-af4b79199be1">
+      <Execution id="7d61f6da-ac78-4498-9dcc-6d6615897e74" />
+      <TestMethod codeBase="C:\Users\muham\source\repos\AutomationSeleniumTesting\bin\Debug\AutomationSeleniumTesting.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationSeleniumTesting.TestExecution" name="SearchHotel_TC003" />
+    </UnitTest>
+    <UnitTest name="BookHotel_TC005" storage="c:\users\muham\source\repos\automationseleniumtesting\bin\debug\automationseleniumtesting.dll" id="f33473f2-e678-1063-be6e-6387112c1f53">
+      <TestCategory>
+        <TestCategoryItem TestCategory="BookHotel" />
+      </TestCategory>
+      <Execution id="f82b3a11-0216-4896-b6d0-24f1eb0e292b" />
+      <TestMethod codeBase="C:\Users\muham\source\repos\AutomationSeleniumTesting\bin\Debug\AutomationSeleniumTesting.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationSeleniumTesting.TestExecution" name="BookHotel_TC005" />
+    </UnitTest>
+    <UnitTest name="LoginWithInvalidCredentials_TC002" storage="c:\users\muham\source\repos\automationseleniumtesting\bin\debug\automationseleniumtesting.dll" id="e92c2124-7c7a-8df7-4f9a-7932fd5139b2">
+      <Execution id="6309cb7a-3541-4813-8254-3c650685dfaa" />
+      <TestMethod codeBase="C:\Users\muham\source\repos\AutomationSeleniumTesting\bin\Debug\AutomationSeleniumTesting.dll" adapterTypeName="executor://mstestadapter/v2" className="AutomationSeleniumTesting.TestExecution" name="LoginWithInvalidCredentials_TC002" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="ec47e835-f858-f022-9a13-52d7b1898641" executionId="23153eb3-f1b9-4b1c-8524-2b1de8c011e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cdda12e7-9750-7e45-ea35-af4b79199be1" executionId="7d61f6da-ac78-4498-9dcc-6d6615897e74" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f33473f2-e678-1063-be6e-6387112c1f53" executionId="f82b3a11-0216-4896-b6d0-24f1eb0e292b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e92c2124-7c7a-8df7-4f9a-7932fd5139b2" executionId="6309cb7a-3541-4813-8254-3c650685dfaa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f659f83-ac67-2583-5be6-133812a1ebbf" executionId="d7b661c5-3cc4-46b6-b5a9-d7cbb329c48f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>

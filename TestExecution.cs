@@ -100,6 +100,7 @@ namespace AutomationSeleniumTesting
         }
 
         [TestMethod]
+        [TestCategory("BookHotel")]
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.XML", "Data.xml", "BookHotel_TC005", DataAccessMethod.Sequential)]
         public void BookHotel_TC005()
         {
